@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Memory Game Options</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"/>
+
+</head>
+
+<body class="mainbg">
+<div class="header" style="margin-top: 10%; margin-bottom: 5%;">
+</div>
+
+<div class="containermain">
+    <h2 class="text-left mb-5">Choose your game options</h2>
+
+    <form action="" id="optionsForm">
+        <label for="pairCount" class="text-white cursive" id="pairCountLabel">Enter the amount of pairs of memory cards
+            you want to play
+            with</label>
+        <input type="number" class="form-control w-75" id="pairCount" min="1" max="" name="pairCount" required>
+
+        <button type="submit" class="btn btn-primary mt-5">Play The Game!</button>
+    </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const level = urlParams.get('level');
+    const pairCount = $('#pairCount');
+    const pairCountLabel = $('#pairCountLabel');
+    const optionsForm = $('#optionsForm');
+
+    switch (level) {
+        case '1':
+            pairCount.attr('max', '9');
+            pairCount.attr('value', '9');
+            pairCountLabel.append(' (maximum of 9):');
+            optionsForm.attr('action', 'levelOne.html');
+            break;
+        case '2':
+            pairCount.attr('max', '12');
+            pairCount.attr('value', '12');
+            pairCountLabel.append(' (maximum of 12):');
+            optionsForm.attr('action', 'levelTwo.html');
+            break;
+        case '3':
+            pairCount.attr('max', '16');
+            pairCount.attr('value', '16');
+            pairCountLabel.append(' (maximum of 16):');
+            optionsForm.attr('action', 'levelThree.html');
+            break;
+        case '4':
+            pairCount.attr('max', '8');
+            pairCount.attr('value', '8');
+            pairCountLabel.append(' (maximum of 8):');
+            optionsForm.attr('action', 'levelFour.html');
+            break;
+    }
+</script>
+</body>
+</html>

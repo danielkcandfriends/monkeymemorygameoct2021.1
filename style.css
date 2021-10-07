@@ -1,0 +1,189 @@
+h1 .counter, h1 span {display: inline-block; vertical-align: middle; margin: 0 20px}
+h1 .counter {width: 200px; font-family: Riffic; font-size: 20px;}
+h1 .counter input[type=number] {
+    font-family: Riffic;
+    font-size: 20px;
+    padding: 10px;
+    width: 10ch;
+    margin-top: 10px;
+}
+body {
+    background: url("images/Memory_Print.png") no-repeat fixed center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#title {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: auto;
+    margin: 6rem;
+    filter: drop-shadow(1rem 1rem 1rem rgba(0, 0, 0, 0.2));
+}
+
+frontpage {
+    background: url("images/monkey_print.jpg") no-repeat fixed center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.cursive {
+    font-family: Riffic;
+    text-shadow: -2px 2px #000000;
+}
+
+.home-link {
+    text-align: center;
+    display: block;
+    color: white;
+    font-family: Riffic;
+    margin-bottom: 2rem;
+    text-shadow: -2px 2px blue;
+    text-decoration: none;
+}
+
+.mainbg {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 0 5rem 5rem 0;
+    
+    
+}
+
+.containermain {
+    width: 800px;
+}
+
+.frontpage .containermain {
+    margin: 0 auto;
+}
+
+.cantainerblock {
+    width: 160px;
+    float: left;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.cantainerblock img {
+    border-radius: 45px;
+    width: 190px;
+
+}
+
+.cantainerblock img:hover {
+    cursor: pointer;
+
+}
+
+.cantainerblock h2 {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+.title {
+    margin-top: 0px;
+    display: block;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 100px;
+    margin-bottom: 15px;
+
+    font-family: Riffic;
+    text-transform: uppercase;
+    
+    font-weight: 900;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4em;
+    color: white;
+    /*font-family: 'Amatic SC', cursive;*/
+    font-family: Riffic;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-shadow: -2px 3px #000;
+
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: white;
+    font-family: Riffic;
+    font-weight: 300;
+    text-shadow: -2px 3px #000;
+    margin-bottom: 5px;
+    margin-top: -15px;
+}
+
+#board {
+    background-color: transparent;
+    width: 720px;
+    height: 530px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin: 0px auto;
+}
+
+
+.card {
+    width: 160px;
+    height: 160px;
+    margin: 10px;
+    float: right;
+    background-image: url("images/back.jpg");
+    background-size: 160px 160px;
+    border-radius: 10px;
+    -moz-box-shadow: -3px 3px 10px #000;
+    -webkit-box-shadow: -3px 3px 10px #000;
+    box-shadow: -3px 3px 10px #000;
+}
+
+
+.card img {
+    display: none;
+}
+
+.card.image img {
+    display: block;
+}
+
+.image {
+    width: 160px;
+    height: 160px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background: white;
+    object-fit: scale-down;
+}
+
+.image.match {
+    width: 160px;
+    height: 160px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+
+/* <div class="cards">Black</div>  */
+/* <div class="cards front">Blue</div>  */
